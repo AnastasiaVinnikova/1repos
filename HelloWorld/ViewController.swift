@@ -13,13 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-//code1
-    /*
-     code
-     code..
-     
-     
-     */
-
+    var dar = 8
+    var bin = 10
 }
 
