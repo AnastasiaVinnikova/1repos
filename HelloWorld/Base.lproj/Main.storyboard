@@ -16,20 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BSf-Y8-Pb1">
-                                <rect key="frame" x="74" y="418" width="266" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cxB-Am-Ai6">
+                                <rect key="frame" x="48.5" y="194" width="317" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7L-v5-U39">
+                                <rect key="frame" x="107" y="703" width="200" height="70"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Cya-26-mEd"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Text">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="33"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BSf-Y8-Pb1" secondAttribute="trailing" constant="74" id="K1P-IK-a1s"/>
-                            <constraint firstItem="BSf-Y8-Pb1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X0g-Pg-zuj"/>
-                            <constraint firstItem="BSf-Y8-Pb1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="bMM-lx-WNM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="H7L-v5-U39" secondAttribute="bottom" constant="89" id="0le-zF-PVj"/>
+                            <constraint firstItem="H7L-v5-U39" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="8yT-Z0-vRx"/>
+                            <constraint firstItem="cxB-Am-Ai6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HOx-9G-fXq"/>
+                            <constraint firstItem="H7L-v5-U39" firstAttribute="centerX" secondItem="cxB-Am-Ai6" secondAttribute="centerX" id="eqa-UL-Plf"/>
+                            <constraint firstItem="cxB-Am-Ai6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="mPN-Ha-Kyf"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -41,6 +54,9 @@
     <resources>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
